@@ -28,6 +28,10 @@ header h1{
 	overflow: auto;
 }
 
+.main {
+	margin: 15px 0;
+}
+
 footer {
 	background: #393939;
 	color: #fff;
