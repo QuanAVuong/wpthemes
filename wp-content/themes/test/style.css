@@ -46,6 +46,7 @@ footer {
 article.post {
 	border-bottom: 1px solid;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
 
 article.post a.button {
@@ -55,4 +56,10 @@ article.post a.button {
 	padding: 10px 5px;
 	margin-bottom: 10px;
 	text-decoration: none;
+}
+
+.meta {
+	background: #333;
+	color: #fff;
+	padding: 5px;
 }
