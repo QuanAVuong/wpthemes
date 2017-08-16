@@ -18,5 +18,12 @@ header {
 header h1{
 	color: #fff;
 	margin: 0;
-	padding: 0;		
+	padding: 0;
+	padding-bottom: 10px		
+}
+
+.container{
+	width: 1020px;
+	margin: 0 auto;
+	overflow: auto;
 }

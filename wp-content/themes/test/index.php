@@ -10,29 +10,37 @@
 
 	<body>
 		<header>
-			<h1><?php bloginfo("name"); ?></h1>
-			<span><?php bloginfo("description"); ?></span>
+			<div class="container">
+				<h1><?php bloginfo("name"); ?></h1>
+				<span><?php bloginfo("description"); ?></span>
+			</div>
 		</header>
 
 		<!-- MAIN LOOP -->
 		<div class="main">
-			<!-- fetch all blog posts -->
-			<?php if(have_posts()) : ?>
-				<?php while(have_posts()): the_post(); ?>
-					<h3><?php the_title(); ?></h3>
-					<div class="meta">
-						Created By <?php the_author(); ?> on <?php the_time("F j, Y g:i a");; ?>
-					</div>
-					<?php the_content(); ?>
-				<?php endwhile; ?>
-			<?php else : ?>
-				<?php echo wpautop("Sorry, No Posts Were Found."); ?> <!-- line breaks => paragraphs -->
-			<?php endif; ?>
+			<div class="container">
+				<!-- fetch all blog posts -->
+				<?php if(have_posts()) : ?>
+					<?php while(have_posts()): the_post(); ?>
+						<h3><?php the_title(); ?></h3>
+						<div class="meta">
+							Created By <?php the_author(); ?> on <?php the_time("F j, Y g:i a");; ?>
+						</div>
+						<?php the_content(); ?>
+					<?php endwhile; ?>
+				<?php else : ?>
+					<?php echo wpautop("Sorry, No Posts Were Found."); ?> <!-- line breaks => paragraphs -->
+				<?php endif; ?>
+			</div>
+			
 		</div>
 
 		<footer>
-			<p>&copy; <?php the_date("Y") ?> - <?php bloginfo("name"); ?>
-			</p>
+			<div class="container">
+				<p>&copy; <?php the_date("Y") ?> - <?php bloginfo("name"); ?>
+				</p>
+			</div>
+			
 		</footer>
 
 		<?php wp_footer(); ?>
