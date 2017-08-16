@@ -20,7 +20,8 @@
 								<?php the_post_thumbnail(); ?>
 							</div>	
 						<?php endif; ?>
-						<?php the_content(); ?>
+						<!-- <?php the_content(); ?> -->
+						<?php the_excerpt(); ?>
 						<br>
 
 						<a class="button" href="<?php the_permalink(); ?>">
