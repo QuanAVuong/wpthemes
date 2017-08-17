@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
+<div class="container">	
 	<!-- MAIN LOOP -->
 	<div class="main">
-		<div class="container">
 			<!-- fetch all blog posts -->
 			<?php if(have_posts()) : ?>
 				<?php while(have_posts()): the_post(); ?>
@@ -35,7 +35,15 @@
 			<?php endif; ?>
 		</div>
 		
+
+	<div class="sidebar">
+		<?php if(is_active_sidebar("sidebar")) : ?>
+			<?php dynamic_sidebar("sidebar"); ?>
+		<?php endif; ?>
 	</div>
+
+	<div class="clr"></div>
+</div>
 
 <?php get_footer(); ?>
 		
