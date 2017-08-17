@@ -28,6 +28,8 @@
 		<?php else : ?>
 			<?php echo wpautop("Sorry, No Posts Were Found."); ?> <!-- line breaks => paragraphs -->
 		<?php endif; ?>
+
+		<?php comments_template(); ?>
 	</div>
 
 <?php get_footer(); ?>
