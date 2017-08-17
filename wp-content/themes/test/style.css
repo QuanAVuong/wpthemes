@@ -75,6 +75,10 @@ article.post a.button {
 	padding: 5px;
 }
 
+.meta a {
+	color: #fff;
+}
+
 .post-thumbnail img {
 	width: 100%;
 	height: auto;
@@ -116,6 +120,5 @@ article.post a.button {
 }
 
 .side-widget a {
-	text-decoration: none;
-	
+	text-decoration: none;	
 }
